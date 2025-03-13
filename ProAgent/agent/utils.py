@@ -34,8 +34,10 @@ def _chat_completion_request_atomic(**json_data):
     Returns:
         The response from the OpenAI ChatCompletion API.
     """
-    openai.api_key = os.environ.get('OPENAI_API_KEY')
-    openai.api_base = os.environ.get('OPENAI_API_BASE')
+    # openai.api_key = os.environ.get('OPENAI_API_KEY')
+    openai.api_key = "sk-f2c5de6cffce4b668e626fe489bbb661"
+    # openai.api_base = os.environ.get('OPENAI_API_BASE')
+    openai.api_base = "https://api.deepseek.com"
     response = openai.ChatCompletion.create(
                 **json_data,
             )

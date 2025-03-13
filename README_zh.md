@@ -53,12 +53,18 @@ n8n
 
 ```Shell
 n8n export:credentials --all --decrypted --output=./ProAgent/n8n_tester/credentials/c.json
+
+n8n export:credentials --all --decrypted --output=c.json
+
 ```
 
 将 `c.json`移动到 `./ProAgent/n8n_tester/credentials/c.json`
 
 ```Shell
 n8n export:workflow --all --output=./ProAgent/n8n_tester/credentials/w.json
+
+n8n export:workflow --all --output=w.json
+
 ```
 
 将 `w.json`移动到 `./ProAgent/n8n_tester/credentials/w.json`
@@ -102,10 +108,12 @@ OPENAI_API_KEY, OPENAI_API_BASE
 如果您在您的工作中使用了我们的代码，请使用以下形式进行引用
 
 ```
-@article{ye2023proagent,
+@article{ye2023proagent,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
   title={ProAgent: From Robotic Process Automation to Agentic Process Automation},
   author={Ye, Yining and Cong, Xin and Tian, Shizuo and Cao, Jiannan and Wang, Hao and Qin, Yujia and Lu, Yaxi and Yu, Heyang and Wang, Huadong and Lin, Yankai and others},
   journal={arXiv preprint arXiv:2311.10751},
   year={2023}
 }
 ```
+
+一个定时任务，每天10点，生成一个三行情书，发送邮件

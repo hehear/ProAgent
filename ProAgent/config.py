@@ -97,7 +97,7 @@ class RPAgentConfig(CfgNode):
         C = CfgNode()
 
         C.default_completion_kwargs = {
-            'model': 'gpt-4-32k',
+            'model': 'deepseek-reasoner',
             'temperature': 0.5,
             'request_timeout':30,
             'max_tokens': 4096,
@@ -107,7 +107,7 @@ class RPAgentConfig(CfgNode):
 
         C.default_knowledge = knowledge
 
-        C.environment = ENVIRONMENT.Production
+        C.environment = ENVIRONMENT.Development
 
         return C
     
